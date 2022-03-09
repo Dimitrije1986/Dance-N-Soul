@@ -75,13 +75,19 @@ img {
     border-radius: 5px;
 }
 
+
 p {
 	font-size: 1.5em;
 	text-align: center;
-	border: 1px solid lightpink;
 	padding: 10px;
 }
+.text {
+	font-size: 1.5em;
+	text-indent: 20px;
+	text-align: justify;
+	padding: 10px;
 
+}
 
 /*footer*/
 
