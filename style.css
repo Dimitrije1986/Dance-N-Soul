@@ -1,64 +1,87 @@
 body, html {
   height: 100%;
   margin: 0;
-  cursor: pointer;
+  padding: 0;
 }
 
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
 
+h2 {
+    color:#000009;
+    padding-top: 50px;
+    font-size: 2em;
+}
 
 /* Navbar*/
 
-.main-nav {
-	display: flex;
-	list-style: none;
-	font-size: 1.5em;
-	background-color: #000009;
-	margin: 0;
-
+.header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: auto;
+    align-items: center;
+    padding: 20px;
+    background-color: #000009;
 }
 
-@media only screen and (max-width: 700px) {
-    .main-nav {
-        font-size: 0.8em;
-        padding: 0;
+.header img {
+    max-width: 100px;
+}
+
+.header ul {
+    display: flex;
+    list-style: none;
+    font-size: 25px;
+    justify-content: space-around;
+    z-index: 9;
+}
+
+.header ul li a {
+    padding: 10px 20px;
+    display: block;
+    color: white;
+}
+
+.header button {
+    display: none;
+    padding: 10px;
+}
+
+@media (max-width: 1000px) {
+    .header button {
+        display: block;
+    }
+
+    .header ul {
+        display: none;
+        background-color: lightsteelblue;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 120px;
     }
 }
 
-.push {
-    margin-left: auto;
-}
 
-li {
-    padding: 20px;
-    color: #f5f5f6;
-}
-
-a {
-	color: #f5f5f6;
-	text-decoration: none;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-/*background*/
+/*background pocetna*/
 
 
 .bg {
   background-image: url("./slike/s11.jpg");
-  height: 100%; 
+  height: 100vh; 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.container {
+.bg .container { 
   top: 30%;  
   position: relative;
-  height: 300px; 
+  height: 300px;
 }
 
 .text {
@@ -76,12 +99,263 @@ a {
   mix-blend-mode: screen; 
 }
 
+
+/*Galerija-pocetna*/
+
+
+
+.slider-wrapper {
+    max-width: 80%;
+    height: 100vh;
+    box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.slider-wrapper .slider-images {
+    height: 100%;
+}
+
+.slider-wrapper .slider-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.slider-wrapper .slider-images img:first-child {
+    display: block;
+}
+
+.slider-wrapper button {
+    height: 65px;
+    width: 65px;
+    border: none;
+    outline: none;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    top: 40%;
+    position: absolute;
+    z-index: 999;
+}
+
+.slider-wrapper button .arrow {
+    border: solid #fff;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 10px;
+    transition: transform 0.3s ease-out;
+    outline: none;
+}
+
+.slider-wrapper #right-btn {
+    right: 0;
+}
+
+.slider-wrapper #right-btn .arrow {
+    transform: rotate(-45deg);
+}
+
+.slider-wrapper #left-btn {
+    left: 0;
+}
+
+.slider-wrapper #left-btn .arrow {
+    transform: rotate(135deg);
+}
+
+/*** O nama ***/
+
+
+/* nas tim */
+
+.column {
+  float: left;
+  width: 31%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.container {
+  padding: 20px 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+/*.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}*/ 
+
+section p {
+    font-size: 20px;
+    text-indent: 30px;
+    letter-spacing: 2px;
+}
+
+section h1 {
+    text-align: left;
+    font-size: 40px;
+}
+
+/*** raspored treninga ***/
+
+.table {
+    background-color: lightgoldenrodyellow;
+}
+
+caption{
+    font-size: 30px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 30px;
+    border-spacing: 10px;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+tr {
+    height: 40px;
+}
+
+.zute {
+    background-color: yellow;
+}
+.roze2 {
+    background-color: pink;
+}
+.roze{
+    background-color: hotpink;
+}
+.zelena{
+    background-color: green;
+}
+.ljubicaste{
+    background-color: purple;
+}
+.plava{
+    background-color: blue;
+}
+.tirkiz{
+    background-color: cyan;
+}
+.mazoret {
+    background-color: lightcoral;
+}
+.crvena {
+    background-color: red;
+}
+.narandzasta {
+    background-color: orange;
+}
+
+
+
+
+/*foto galerija*/
+
+.galerija{
+    height: 100vh;
+    background-color: lightgoldenrodyellow;
+}
+
+
 /*footer*/
 
 footer {
     text-align: center;
     background-color: #000009;
     color: white;
-    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.5em;
+
     
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer h2 {
+    color: white;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  
+}
+
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+ }
+
+ .fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
 }
