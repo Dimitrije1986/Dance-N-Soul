@@ -2,6 +2,8 @@ body, html {
   height: 100%;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 h1 {
@@ -24,11 +26,11 @@ h2 {
     margin: auto;
     align-items: center;
     padding: 20px;
-    background-color: #000009;
+   /* background-color: #fff;*/
 }
 
 .header img {
-    max-width: 100px;
+    max-width: 275px;
 }
 
 .header ul {
@@ -37,12 +39,14 @@ h2 {
     font-size: 25px;
     justify-content: space-around;
     z-index: 9;
+    margin-right: 150px;
 }
 
 .header ul li a {
     padding: 10px 20px;
+    text-decoration: none;
     display: block;
-    color: white;
+    color: black;
 }
 
 .header button {
@@ -73,6 +77,8 @@ h2 {
 .bg {
   background-image: url("./slike/s11.jpg");
   height: 100vh; 
+ /* max-width: 80%;*/
+  margin: 25px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -168,13 +174,41 @@ h2 {
 
 /*** O nama ***/
 
+#mi {
+    padding-left: 120px;
+    font-family: reight-display-pro,serif;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1.2;
+    text-align: left;
+    font-size: 2.5rem;
+
+}
+
+.card4 {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      font-family: freight-display-pro, serif;
+      font-style: italic;
+      font-weight: 300;
+      font-size: 2rem;
+      padding: 85px;
+      margin: 40px;
+}
+
+@media (max-width: 1000px) {
+    .card4 {
+       font-size: 25px ;
+       padding: 10px;
+    }
+}
 
 /* nas tim */
 
 .column {
   float: left;
-  width: 31%;
+  width: 45%;
   margin-bottom: 16px;
+  margin-left: 25px;
   padding: 0 8px;
 }
 
@@ -187,8 +221,10 @@ h2 {
 }
 
 
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
 }
 
 
@@ -222,81 +258,94 @@ h2 {
   background-color: #555;
 }*/ 
 
-section p {
-    font-size: 20px;
-    text-indent: 30px;
-    letter-spacing: 2px;
-}
 
-section h1 {
-    text-align: left;
-    font-size: 40px;
-}
 
 /*** raspored treninga ***/
 
-.table {
-    background-color: lightgoldenrodyellow;
+.cover {
+    margin: 30px;
+    background-position: center;
 }
 
-caption{
-    font-size: 30px;
-}
+.cover img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
 
-table, th, td {
-    border: 1px solid black;
-    padding: 30px;
-    border-spacing: 10px;
-}
 
-.center{
-    margin-left: auto;
-    margin-right: auto;
-}
-tr {
-    height: 40px;
-}
-
-.zute {
-    background-color: yellow;
-}
-.roze2 {
-    background-color: pink;
-}
-.roze{
-    background-color: hotpink;
-}
-.zelena{
-    background-color: green;
-}
-.ljubicaste{
-    background-color: purple;
-}
-.plava{
-    background-color: blue;
-}
-.tirkiz{
-    background-color: cyan;
-}
-.mazoret {
-    background-color: lightcoral;
-}
-.crvena {
-    background-color: red;
-}
-.narandzasta {
-    background-color: orange;
 }
 
 
 
-
-/*foto galerija*/
+/*foto galerija
 
 .galerija{
     height: 100vh;
     background-color: lightgoldenrodyellow;
+}/*
+
+/*kontak
+
+.con_heder {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.con_container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+
+.con_column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+
+.con_row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+textarea {
+    height: 170px;
+}
+
+@media screen and (max-width: 1000px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}/*
 
 
 /*footer*/
