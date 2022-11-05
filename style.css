@@ -441,6 +441,14 @@ footer h2 {
     flex-direction: column-reverse;
   }
 
+  .aboutUs-wrraper img {
+    width: 80%;
+  }
+
+  .card {
+    width: 90%;
+  }
+
   .team-wrraper {
     flex-direction: column;
     align-items: center;
@@ -448,5 +456,9 @@ footer h2 {
 
   .team-card {
     padding-top: 1em;
+  }
+
+  .gravity h3 {
+    padding: 0 3%;
   }
 }
