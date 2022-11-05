@@ -1,67 +1,49 @@
 //navbar//
-let btn = document.querySelector('.header button');
-let meni = document.querySelector('.header ul');
+let link = document.querySelector(".menu");
+let meni = document.querySelector(".header ul");
 
-btn.addEventListener('click', e => {
-
- if (btn.innerText === 'MENU') {
-		meni.style.display = 'block';
-		btn.innerText = 'CLOSE';
-   }else{
-        meni.style.display = 'none';
-        btn.innerText = 'MENU';   
-		}
- 
+link.addEventListener("click", (e) => {
+  meni.classList.toggle("open");
 });
-
-window.addEventListener('resize', e => {
-	if (window.innerWidth > 1000) {
-	   meni.style.display = 'flex';
-     }else{
-	   meni.style.display = 'none';
-    }
-});
-
 
 //Galerija pocetna//
 
-let pictures = document.querySelectorAll('.slider-images img');
-let leftBtn = document.querySelector('#left-btn');
-let rightBtn = document.querySelector('#right-btn');
+let pictures = document.querySelectorAll(".slider-images img");
+let leftBtn = document.querySelector("#left-btn");
+let rightBtn = document.querySelector("#right-btn");
 
 let imgNum = 0;
 
 const moveRight = () => {
-	displayNone();
+  displayNone();
 
-	imgNum++;
+  imgNum++;
 
-	if(imgNum === pictures.length) {
-		imgNum = 0;
-	}
+  if (imgNum === pictures.length) {
+    imgNum = 0;
+  }
 
-	pictures[imgNum].style.display = 'block';
-}
+  pictures[imgNum].style.display = "block";
+};
 
 const moveLeft = () => {
-	displayNone();
+  displayNone();
 
-	imgNum--;
+  imgNum--;
 
-	if(imgNum === -1) {
-		imgNum = pictures.length - 1;
-	}
+  if (imgNum === -1) {
+    imgNum = pictures.length - 1;
+  }
 
-	pictures[imgNum].style.display = 'block';
-}
+  pictures[imgNum].style.display = "block";
+};
 
-rightBtn.addEventListener('click', moveRight);
+rightBtn.addEventListener("click", moveRight);
 
-leftBtn.addEventListener('click', moveLeft);
+leftBtn.addEventListener("click", moveLeft);
 
 const displayNone = () => {
-	pictures.forEach((img) => {
-		img.style.display = 'none';
-	})
-}
-
+  pictures.forEach((img) => {
+    img.style.display = "none";
+  });
+};

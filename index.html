@@ -1,69 +1,158 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<title>DANCE N SOUL</title>
-</head>
-<body>
-  <nav class="header">
-          <img  src="slike/logo.png">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Dancing+Script:wght@400;500&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <title>DANCE N SOUL</title>
+  </head>
+  <body>
+    <!-- Navbar-->
+    <nav class="header">
+      <img src="slike/logo1.png" />
 
-          <button >MENU</button>
+      <a class="menu"></a>
 
-      	<ul>
-      		<li><a href="index.html">Početna</a></li>
-      		<li><a href="o_nama.html">O nama</a></li>
-            <li><a href="raspored.html">Raspored treninga</a></li>
-      		
-      	</ul>
-  </nav>
+      <ul>
+        <li><a href="#section-2">O nama</a></li>
+        <li><a href="#section-3">Nas Tim</a></li>
+        <li><a href="#section-4">Galerija</a></li>
+      </ul>
+    </nav>
 
-  <div class="bg">
-       <div class="container">
-         <div class="text">Dance N Soul</div>
-       </div>
-  </div>
+    <!-- first section-->
+    <section id="section-1" class="bg">
+      <img src="./slike/bg.jpg" alt="DnS" />
+      <div class="text-wrapper">
+        <h1>DANCE N SOUL</h1>
+        <h3>Mi plesemo dusom</h3>
+      </div>
+    </section>
 
-  <div>
+    <!-- about us section-->
+    <section id="section-2" class="container">
+      <h2>O Nama</h2>
+      <div class="underline"></div>
+      <div class="aboutUs-wrraper">
+        <p class="card">
+          O da, poznat nam je ovaj osecaj. Nekada smo i mi bili tamo, u kostimu,
+          sredjene kose, lagano nasminkanog lica, zurili u prazan prostor,
+          cekali aplauz. Sada smo ovde da im ostvarimo snove i da ih vodimo na
+          nacim na koji bismo mi zeleli da su nas vodili. Mi smo tu da im
+          pomognemo da se izrastu i razviju se kao igraci i kao dobri ljudi.<br />
+          <br />
+          Zelimo da pesmom i igrom priblizimo umetnost nasoj zajednici, zelimo
+          da podignemo raspolozenje, izmamimo osmehe, ispunimo srca. Tu smo za
+          sve koji vole nasu strast, umetnost i ples.
+          <br /><br />
+          Mi smo Dance N Soul.
+        </p>
+        <img src="slike/girl.jpg" alt="little-girl" />
+      </div>
+    </section>
 
-    <h1>Galerija</h1>
+    <!-- Team section -->
+    <section id="section-3" class="container">
+      <h2>Nas Tim</h2>
+      <div class="underline"></div>
 
-    <div class="slider-wrapper">
-        <button id="left-btn"><i class="arrow"></i></button>
-        <div class="slider-images">
-            <img src="./slike/s1.jpg">
-            <img src="./slike/s2.jpg">
-            <img src="./slike/s10.jpg">
-            <img src="./slike/s3.jpg">
-            <img src="./slike/s12.jpg">
-            <img src="./slike/s7.jpg">
-            <img src="./slike/s8.jpg">
-         </div>   
-        <button id="right-btn"><i class="arrow"></i></button>
-    </div>    
-  </div>
+      <div class="team-wrraper">
+        <div class="team-card">
+          <img src="./slike/mirna1.jpg" alt="Mirna" />
+          <div class="team-member">
+            <h2>Mirna Krnić</h2>
+            <p class="title">osnivač i koreograf</p>
+            <p>dipl master fizičkog vaspitanja</p>
+            <!--p>Strast prema plesu sam pretvorila u svoj životni poziv, tako da sada radim i živim svoj san.</p-->
+            <!--p>example@example.com</p>
+                <p><button class="button">Contact</button></p-->
+          </div>
+        </div>
 
+        <div class="team-card">
+          <img src="./slike/sanja.jpg" alt="Sanja" />
+          <div class="team-member">
+            <h2>Aleksandra Đilas</h2>
+            <p class="title">trener i koreograf</p>
+            <p>diplomirani vaspitač</p>
+            <!--p>example@example.com</p>
+                <p><button class="button">Contact</button></p-->
+          </div>
+        </div>
+      </div>
+    </section>
 
-  
-  <footer>
-    <h2>DANCE N SOUL</h2>
-    <div>
+    <!-- just one picture :) -->
+    <section class="gravity">
+      <img src="./slike/big-leap.jpg" />
+      <div class="text-wrapper">
+          <h3>When you dance, the gravity is zero</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- galery section-->
+    <section id="section-4">
+      <div>
+        <h2>Galerija</h2>
+        <div class="underline"></div>
+        <div class="slider-wrapper">
+          <button id="left-btn"><i class="arrow"></i></button>
+          <div class="slider-images">
+            <img src="./slike/s1.jpg" />
+            <img src="./slike/s2.jpg" />
+            <img src="./slike/s10.jpg" />
+            <img src="./slike/s3.jpg" />
+            <img src="./slike/s12.jpg" />
+            <img src="./slike/s7.jpg" />
+            <img src="./slike/s8.jpg" />
+          </div>
+          <button id="right-btn"><i class="arrow"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <h2>DANCE N SOUL</h2>
+      <div>
         <ul>
-            <li> Generala Drapšina 129, Kikinda</li>
-            <div class="line">
-                <li><a class="fa fa-facebook" href="https://www.facebook.com/Dance-N-Soul-205111957030318" target="blank"></a></li>
-                <li><a class="fa fa-instagram" href="https://www.instagram.com/dance_n_soul/" target="blank"></a></li>
-                <li><a class="fa fa-youtube" href="https://www.youtube.com/channel/UCO1Mel-s2wBLecOdH6HY7vw" target="blank"></a></li>
-            </div>
+          <li>Generala Drapšina 129, 23300 Kikinda, Srbija</li>
+          <div class="line">
+            <li>
+              <a
+                class="fa fa-facebook"
+                href="https://www.facebook.com/Dance-N-Soul-205111957030318"
+                target="blank"
+              ></a>
+            </li>
+            <li>
+              <a
+                class="fa fa-instagram"
+                href="https://www.instagram.com/dance_n_soul/"
+                target="blank"
+              ></a>
+            </li>
+            <li>
+              <a
+                class="fa fa-youtube"
+                href="https://www.youtube.com/channel/UCO1Mel-s2wBLecOdH6HY7vw"
+                target="blank"
+              ></a>
+            </li>
+          </div>
         </ul>
-    </div>
-  </footer>
+      </div>
+    </footer>
 
-  <script type="text/javascript" src="script.js"></script>
-</body>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>
-
-  
