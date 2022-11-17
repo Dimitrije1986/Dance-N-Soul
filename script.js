@@ -6,44 +6,13 @@ link.addEventListener("click", (e) => {
   meni.classList.toggle("open");
 });
 
-//Galerija pocetna//
+//************ form ********** //
 
-let pictures = document.querySelectorAll(".slider-images img");
-let leftBtn = document.querySelector("#left-btn");
-let rightBtn = document.querySelector("#right-btn");
+const btn = document.querySelector("form button");
+const filds = document.querySelectorAll(".form-message");
 
-let imgNum = 0;
-
-const moveRight = () => {
-  displayNone();
-
-  imgNum++;
-
-  if (imgNum === pictures.length) {
-    imgNum = 0;
-  }
-
-  pictures[imgNum].style.display = "block";
-};
-
-const moveLeft = () => {
-  displayNone();
-
-  imgNum--;
-
-  if (imgNum === -1) {
-    imgNum = pictures.length - 1;
-  }
-
-  pictures[imgNum].style.display = "block";
-};
-
-rightBtn.addEventListener("click", moveRight);
-
-leftBtn.addEventListener("click", moveLeft);
-
-const displayNone = () => {
-  pictures.forEach((img) => {
-    img.style.display = "none";
+btn.addEventListener("click", () => {
+  filds.forEach((element) => {
+    element.value = "";
   });
-};
+});

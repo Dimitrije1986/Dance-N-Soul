@@ -10,16 +10,12 @@ html {
   scroll-behavior: smooth;
 }
 
-section {
-  padding-bottom: 3em;
-}
-
 h1 {
   margin: 0;
   padding: 1rem;
   font-family: "Cabin Sketch", cursive;
-  font-size: 7rem;
-  color: rgba(158, 0, 0, 0.9);
+  font-size: 9rem;
+  color: #f419e5;
 }
 
 h2 {
@@ -27,12 +23,13 @@ h2 {
   font-size: 2em;
   text-align: center;
   font-weight: 400;
+  padding-top: 3rem;
 }
 
 h3 {
   font-family: "Dancing Script", handwriting;
   font-weight: 400;
-  color: rgba(243, 219, 219, 0.9);
+  color: #fae8f8ec;
 }
 
 .container {
@@ -45,7 +42,7 @@ h3 {
 .header {
   height: 6em;
   padding: 1em;
-  background-color: #1b1b1e16;
+  background-color: #0f0f0f0c;
 }
 
 .header img {
@@ -76,7 +73,7 @@ h3 {
 .header li:after {
   display: block;
   content: "";
-  border-bottom: solid 2px rgba(158, 0, 0, 0.4);
+  border-bottom: solid 2px #f419e567;
   transform: scaleX(0);
   transition: transform 300ms ease-in-out;
 }
@@ -99,7 +96,7 @@ h3 {
 }
 
 .text-wrapper {
-  background-color: #030e247f;
+  background-color: #0f0f0f93;
   position: absolute;
   height: 100vh;
   top: 0;
@@ -121,34 +118,33 @@ h3 {
   margin: auto;
   height: 1px;
   width: 7em;
-  background-color: rgba(158, 0, 0, 0.4);
+  background-color: #f419e567;
 }
 
 .aboutUs-wrraper {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 2em;
+  margin: 3em 0;
 }
 
 .aboutUs-wrraper img {
-  width: 20em;
+  width: 40%;
+  padding: 5%;
 }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   font-style: italic;
   font-size: 1.2em;
-  width: 47%;
+  width: 40%;
   padding: 5%;
-  margin: 1em;
 }
 
 /* nas tim */
 
 .team-wrraper {
   display: flex;
-  padding-top: 2rem;
+  margin-top: 3rem;
+  padding: 3rem;
   justify-content: space-around;
 }
 
@@ -183,104 +179,101 @@ h3 {
   right: 0;
   bottom: 10%;
   text-align: center;
+  padding: 1rem;
 }
 
-/*Galerija*/
+/*Kontakt*/
 
-.slider-wrapper {
-  max-width: 80%;
-  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
-    0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
-  margin: auto;
-  margin-top: 20px;
-  position: relative;
-}
-
-.slider-wrapper .slider-images {
-  height: 100%;
-}
-
-.slider-wrapper .slider-images img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: none;
-}
-
-.slider-wrapper .slider-images img:first-child {
-  display: block;
-}
-
-.slider-wrapper button {
-  width: 4rem;
-  border: none;
-  outline: none;
-  background: transparent;
-  cursor: pointer;
-  top: 40%;
-  position: absolute;
-  z-index: 999;
-}
-
-.slider-wrapper button .arrow {
-  border: solid #fff;
-  border-width: 0 4px 4px 0;
-  display: inline-block;
-  padding: 10px;
-  transition: transform 0.3s ease-out;
-  outline: none;
-}
-
-.slider-wrapper #right-btn {
-  right: 0;
-}
-
-.slider-wrapper #right-btn .arrow {
-  transform: rotate(-45deg);
-}
-
-.slider-wrapper #left-btn {
-  left: 0;
-}
-
-.slider-wrapper #left-btn .arrow {
-  transform: rotate(135deg);
-}
-
-/*footer*/
-
-footer {
+#section-4 {
+  background-color: #0f0f0fe6;
+  color: rgba(255, 255, 255, 0.838);
   text-align: center;
-  background-color: #00000928;
-  color: #000009;
+}
+
+#section-4 h2 {
+  margin: 0;
+  padding: 3rem 0 1.5rem 0;
+  color: rgba(255, 255, 255, 0.838);
+}
+
+#section-4 p {
+  color: rgba(255, 255, 255, 0.838);
+  font-size: 1rem;
+  margin: 2.5rem 0;
+  font-family: sans-serif;
+  font-weight: 200;
+  font-style: italic;
+  padding: 0 1rem;
+}
+
+.content-form-wrraper {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  padding-top: 5rem;
 }
 
-footer ul {
-  list-style: none;
-  padding: 0;
+.pre_form-text {
+  width: 45%;
 }
 
-footer h2 {
-  margin-left: 3px;
-  margin-right: 3px;
+.pre_form-text h3 {
+  padding: 0 1rem;
+}
+
+form {
+  margin: 2rem;
+}
+
+.form-wrraper {
+  padding: 1rem;
+  background-color: #01080e;
+  width: 35%;
+  margin: 0 auto;
+  border-radius: 7%;
+  text-align: left;
+}
+
+form input {
+  width: 100%;
+  height: 2rem;
+  background-color: #404040;
+  color: #fff;
+  margin: 10px 0;
+}
+
+form textarea {
+  width: 100%;
+  height: 3rem;
+  background-color: #404040;
+  color: #fff;
+  margin: 10px 0;
+}
+
+form button {
+  width: 6rem;
+  height: 2rem;
+  background-color: #404040;
+  border-radius: 5%;
+}
+
+form button:hover {
+  background-color: #202020;
 }
 
 .line {
+  padding-top: 3rem;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 1em;
+  justify-content: center;
+}
+
+.line li {
+  list-style: none;
+  padding: 10px;
 }
 
 .fa {
   padding: 1rem;
   font-size: 2rem;
-  width: 2rem;
-  text-align: center;
+  width: 1rem;
   text-decoration: none;
   border-radius: 50%;
 }
@@ -290,18 +283,44 @@ footer h2 {
 }
 
 .fa-facebook {
-  background: #3b5998;
+  background: #01080e;
   color: white;
 }
 
 .fa-instagram {
-  background: #125688;
+  background: #01080e;
   color: white;
 }
 
 .fa-youtube {
-  background: #bb0000;
+  background: #01080e;
   color: white;
+}
+
+/*footer*/
+
+footer {
+  text-align: center;
+  background-color: #0f0f0ff3;
+  color: rgba(255, 255, 255, 0.838);
+}
+
+footer h2 {
+  margin: 0;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.838);
+}
+
+footer h3 {
+  margin: 0;
+  padding-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.763);
+  font-size: 2rem;
+}
+
+footer p {
+  margin: 0;
+  padding-bottom: 10px;
 }
 
 /****  MEDIA QUERY *****/
@@ -319,7 +338,7 @@ footer h2 {
   }
 
   h1 {
-    font-size: 5rem;
+    font-size: 6.5rem;
   }
 
   .bg img {
@@ -340,31 +359,53 @@ footer h2 {
     width: 5rem;
   }
 
+  .aboutUs-wrraper {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
   .card {
-    font-size: 1em;
+    width: 75%;
   }
 
   .aboutUs-wrraper img {
-    width: 14rem;
-    height: 18rem;
+    width: 75%;
   }
 
-  .team-card img {
-    width: 15rem;
+  .team-wrraper {
+    flex-direction: column;
+  }
+
+  .team-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
   }
 
   .gravity img {
-    width: 150%;
-    left: -20%;
+    width: 100%;
   }
   .gravity h3 {
     font-size: 3rem;
   }
 
-  .slider-wrapper .slider-images {
-    height: auto;
+  .content-form-wrraper {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+  }
+
+  .pre_form-text {
+    width: 85%;
+  }
+
+  .form-wrraper {
+    width: 55%;
   }
 }
+
+/******** 500px ******/
 
 @media (max-width: 500px) {
   .header {
@@ -381,7 +422,7 @@ footer h2 {
     padding: 20px;
     width: 100%;
     background: url("slike/menu.png") no-repeat 98% center;
-    background-color: #404040;
+    background-color: #0f0f0ff3;
     cursor: pointer;
   }
 
@@ -392,7 +433,7 @@ footer h2 {
   .header ul {
     display: none;
     overflow: hidden;
-    background-color: #606060;
+    background-color: #464646;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -410,7 +451,7 @@ footer h2 {
   .header ul li a {
     color: #fff;
     padding: 10px;
-    border-bottom: 1px solid #404040;
+    border-bottom: 1px solid #0f0f0fe6;
     display: block;
     margin: 0;
   }
@@ -421,24 +462,25 @@ footer h2 {
 
   .bg {
     z-index: 1;
+    height: 80vh;
   }
 
   .bg img {
     width: 200%;
     left: -100%;
+    height: 80vh;
   }
 
-  .gravity img {
-    width: 200%;
-    left: -50%;
+  .bg .text-wrapper {
+    height: 80vh;
   }
 
-  .gravity h3 {
-    font-size: 2rem;
+  h1 {
+    font-size: 5rem;
   }
 
-  .aboutUs-wrraper {
-    flex-direction: column-reverse;
+  .bg h3 {
+    font-size: 3rem;
   }
 
   .aboutUs-wrraper img {
@@ -446,7 +488,8 @@ footer h2 {
   }
 
   .card {
-    width: 90%;
+    width: 80%;
+    font-size: 1em;
   }
 
   .team-wrraper {
@@ -458,7 +501,37 @@ footer h2 {
     padding-top: 1em;
   }
 
+  .team-card img {
+    width: 17rem;
+  }
+
+  .gravity {
+    height: 80vh;
+  }
+
+  .text-wrapper {
+    height: 80vh;
+  }
+  .gravity img {
+    height: 80vh;
+    max-width: 100%;
+    left: 0;
+  }
+
   .gravity h3 {
+    font-size: 2rem;
     padding: 0 3%;
+  }
+
+  .pre_form-text {
+    padding-bottom: 2rem;
+  }
+
+  .form-wrraper {
+    width: 80%;
+  }
+
+  form {
+    margin: 1rem;
   }
 }
