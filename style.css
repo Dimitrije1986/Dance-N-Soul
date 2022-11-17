@@ -420,7 +420,7 @@ footer p {
   .header .menu {
     display: block;
     padding: 20px;
-    width: 100%;
+    width: 98%;
     background: url("slike/menu.png") no-repeat 98% center;
     background-color: #0f0f0ff3;
     cursor: pointer;
