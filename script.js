@@ -8,11 +8,8 @@ link.addEventListener("click", (e) => {
 
 //************ form ********** //
 
-const btn = document.querySelector("form button");
-const filds = document.querySelectorAll(".form-message");
-
-btn.addEventListener("click", () => {
-  filds.forEach((element) => {
-    element.value = "";
-  });
-});
+window.onbeforeunload = () => {
+  for (const form of document.getElementsByTagName("form")) {
+    form.reset();
+  }
+};
